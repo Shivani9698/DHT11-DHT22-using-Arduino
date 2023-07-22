@@ -1,1 +1,74 @@
 # DHT11-DHT22-using-Arduino
+
+# DHT11 Temperature and Humidity Sensor Readings
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+## Description
+
+This Arduino project reads temperature and humidity data from a DHT11 sensor and displays the readings on the serial monitor. It utilizes the Adafruit_Sensor and DHT libraries to interface with the DHT11 sensor and compute the heat index.
+
+![DHT11 Sensor](dht11_sensor.jpg)
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+The DHT11 Temperature and Humidity Sensor is a low-cost digital sensor that provides accurate temperature and humidity measurements. This project demonstrates how to use the DHT11 sensor with an Arduino board to obtain real-time temperature and humidity readings and display them on the serial monitor.
+
+## Setup
+
+### Components Required
+
+- Arduino board (e.g., Arduino Uno)
+- DHT11 Temperature and Humidity Sensor
+- Jumper wires
+
+### Circuit Connection
+
+Connect the DHT11 sensor to the Arduino board as follows:
+
+
+DHT11    Arduino
+  VCC  ->   5V
+  GND  ->   GND
+  OUT  ->   D5
+
+
+![Circuit Diagram](circuit_diagram.jpg)
+
+## Usage
+
+1. Install the Arduino IDE from the official website if you haven't already.
+2. Connect the DHT11 sensor to the Arduino board as described in the circuit connection section.
+3. Open the Arduino IDE, and navigate to `Sketch -> Include Library -> Manage Libraries`.
+4. Search for "DHT" in the Library Manager and install the "DHT sensor library" by Adafruit.
+5. Upload the provided code (`dht_sensor_readings.ino`) to your Arduino board.
+6. Open the Serial Monitor (`Tools -> Serial Monitor`) with a baud rate of `115200`.
+7. The Serial Monitor will display the temperature and humidity readings in Celsius and percentage, respectively, at 2-second intervals.
+
+## Contributing
+
+Contributions to this project are welcome! If you find any issues or want to improve the code, please feel free to open an issue or submit a pull request. Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/your-feature-name`.
+5. Submit a pull request.
+
+Please ensure your pull request adheres to the following guidelines:
+- Follow the existing coding style and naming conventions.
+- Include appropriate comments in the code for better understanding.
+- Test your changes thoroughly.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
