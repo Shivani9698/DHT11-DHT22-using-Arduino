@@ -1,0 +1,34 @@
+#include <Adafruit_Sensor.h>  // Include the Adafruit_Sensor library, which provides a common interface for various sensors.
+#include <DHT.h>  // Include the DHT library, which is used to interface with DHT temperature and humidity sensors.
+
+#define DHTPIN 5   // Define the pin number to which the DHT sensor is connected.
+#define DHTTYPE DHT11  // Define the type of the DHT sensor. In this case, it's DHT11.
+
+DHT dht = DHT(DHTPIN, DHTTYPE);  // Create a DHT object named 'dht' and specify the pin and type in the constructor.
+
+void setup() {
+  Serial.begin(115200);  // Initialize the serial communication with a baud rate of 115200 bps.
+  dht.begin();  // Initialize the DHT sensor.
+}
+
+void loop(){
+  delay(2000);  // Pause for 2 seconds to avoid rapid readings and reduce sensor interference.
+
+  float h = dht.readHumidity();  // Read the humidity value from the DHT sensor and store it in the variable 'h'.
+  float t = dht.readTemperature();  // Read the temperature value in Celsius from the DHT sensor and store it in the variable 't'.
+  float f = dht.readTemperature(true);  // Read the temperature value in Fahrenheit from the DHT sensor and store it in the variable 'f'.
+
+  if (isnan(h) || isnan(t) || isnan(f)) {  // Check if any of the readings are NaN (Not a Number).
+    Serial.println("Failed to read from DHT sensor!");  // If any of the readings are invalid, print an error message.
+    return;  // Exit the loop and wait for the next iteration.
+  }
+
+  float hif = dht.computeHeatIndex(f, h);  // Calculate the Heat Index in Fahrenheit using the temperature and humidity values.
+  float hic = dht.computeHeatIndex(t, h, false);  // Calculate the Heat Index in Celsius using the temperature and humidity values.
+
+  Serial.print("Humidity: ");  // Print the label "Humidity: ".
+  Serial.print(h);  // Print the humidity value.
+  Serial.print(" % ");  // Print the unit symbol for percentage.
+  Serial.print("Temperature: ");  // Print the label "Temperature: ".
+  Serial.print(t);  // Print the temperature value in Celsius.
+}
