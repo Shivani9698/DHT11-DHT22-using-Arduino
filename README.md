@@ -8,7 +8,6 @@
 
 This Arduino project reads temperature and humidity data from a DHT11 sensor and displays the readings on the serial monitor. It utilizes the Adafruit_Sensor and DHT libraries to interface with the DHT11 sensor and compute the heat index.
 
-![DHT11 Sensor](dht11_sensor.jpg)
 
 ## Table of Contents
 
@@ -41,7 +40,6 @@ DHT11    Arduino
   OUT  ->   D5
 
 
-![Circuit Diagram](circuit_diagram.jpg)
 
 ## Usage
 
