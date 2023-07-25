@@ -15,7 +15,7 @@ This Arduino project reads temperature and humidity data from a DHT11 sensor and
 - [Setup](#setup)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+- [Author]
 
 ## Introduction
 
@@ -81,7 +81,7 @@ Please ensure your pull request adheres to the following guidelines:
 - Include appropriate comments in the code for better understanding.
 - Test your changes thoroughly.
 
-## License
+## Author
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Shivani Raj
 
