@@ -36,8 +36,15 @@ Connect the DHT11 sensor to the Arduino board as follows:
 
 DHT11    Arduino
   VCC  ->   5V
+  
   GND  ->   GND
+  
   OUT  ->   D5
+  
+### Schematic
+
+  ![image](https://github.com/Shivani9698/DHT11-DHT22-using-Arduino/assets/119753029/417954e7-60d7-4a24-8b22-c7620a4e6666)
+
 
 ## Library Installation
 To read from the DHT sensor, we’ll use the DHT library from Adafruit. To use this library you also need to install the Adafruit Unified Sensor library. Follow the next steps to install those libraries.
