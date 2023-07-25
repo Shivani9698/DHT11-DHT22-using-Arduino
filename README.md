@@ -35,6 +35,7 @@ Connect the DHT11 sensor to the Arduino board as follows:
 
 
 DHT11    Arduino
+
   VCC  ->   5V
   
   GND  ->   GND
