@@ -61,7 +61,9 @@ To read from the DHT sensor, we’ll use the DHT library from Adafruit. To use t
 
 
 5.Installing Adafruit Unified Sensor driver library
-
+## Links for library installation:
+ https://github.com/adafruit/DHT-sensor-library
+ 
 
 ## Usage
 
