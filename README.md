@@ -39,6 +39,21 @@ DHT11    Arduino
   GND  ->   GND
   OUT  ->   D5
 
+## Library Installation
+To read from the DHT sensor, we’ll use the DHT library from Adafruit. To use this library you also need to install the Adafruit Unified Sensor library. Follow the next steps to install those libraries.
+
+1.Open your Arduino IDE and go to Sketch > Include Library > Manage Libraries. The Library Manager should open.
+
+2.Search for “DHT” on the Search box and install the DHT library from Adafruit.
+![image](https://github.com/Shivani9698/DHT11-DHT22-using-Arduino/assets/119753029/7abb0cc1-8a77-4a10-af67-509eb9d1b2a5)
+
+
+3.Installing Adafruit DHT library
+4.After installing the DHT library from Adafruit, type “Adafruit Unified Sensor” in the search box. Scroll all the way down to find the library and install it.
+![image](https://github.com/Shivani9698/DHT11-DHT22-using-Arduino/assets/119753029/15be6f6d-67ac-4f75-b169-4a9a042d8e1a)
+
+
+5.Installing Adafruit Unified Sensor driver library
 
 
 ## Usage
