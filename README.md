@@ -1,13 +1,11 @@
 # DHT11-DHT22-using-Arduino
 
 # DHT11 Temperature and Humidity Sensor Readings
-
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
 This Arduino project reads temperature and humidity data from a DHT11 sensor and displays the readings on the serial monitor. It utilizes the Adafruit_Sensor and DHT libraries to interface with the DHT11 sensor and compute the heat index.
-
 
 ## Table of Contents
 
@@ -35,6 +33,7 @@ Connect the DHT11 sensor to the Arduino board as follows:
 
 
 DHT11    Arduino
+
 
   VCC  ->   5V
   
