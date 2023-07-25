@@ -59,7 +59,7 @@ To read from the DHT sensor, we’ll use the DHT library from Adafruit. To use t
 4.After installing the DHT library from Adafruit, type “Adafruit Unified Sensor” in the search box. Scroll all the way down to find the library and install it.
 ![image](https://github.com/Shivani9698/DHT11-DHT22-using-Arduino/assets/119753029/15be6f6d-67ac-4f75-b169-4a9a042d8e1a)
 
-## Links for library installation:
+## Link for library installation:
  https://github.com/adafruit/DHT-sensor-library
  
 
